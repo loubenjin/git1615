@@ -5,15 +5,6 @@
 */
 /*初始化定位*/
 define(["text!../zhuye.html","css!../css/main.css"], function(homePage){
-	$.ajax({
-		type:"get",
-		url:"zhuye.json",
-		data:"name=tom&age=22",
-		success:function(responseData){
-			zhuye=responseData.data.act_info;
-		/*	fun();*/
-		}
-});
 	return {
 		init : function(){
 			$(".main-zhu").html(homePage);
@@ -37,6 +28,15 @@ define(["text!../zhuye.html","css!../css/main.css"], function(homePage){
 				$(".here").css({"display":"inline-block"});
 				$(".here").text(n++);
 			});*/
+			$.ajax({
+		type:"get",
+		url:"zhuye.json",
+		data:"name=tom&age=22",
+		success:function(responseData){
+			zhuye=responseData.data.act_info;
+		/*	fun();*/
+		}
+});
 			var htmlstr= baidu.template("firstTmp",{zhuye});
 			$('#swiper-wrapper').html(htmlstr);
 			$(this).find("#firstTmp").remove();
