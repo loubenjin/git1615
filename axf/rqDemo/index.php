@@ -70,6 +70,7 @@ $signPackage = $jssdk->GetSignPackage();
 			</ul>
 		</div>
 	</body>
+	<script data-main = "app" type="text/javascript" src = "js/require.js"></script>
 	<script>
   wx.config({
     debug: true,
@@ -129,5 +130,4 @@ $signPackage = $jssdk->GetSignPackage();
 });
 });
 </script>
-<script data-main = "app" type="text/javascript" src = "js/require.js"></script>
 </html>
