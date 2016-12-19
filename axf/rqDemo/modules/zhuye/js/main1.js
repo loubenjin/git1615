@@ -49,8 +49,7 @@ define(["text!../zhuye.html","css!../css/main.css"], function(homePage){
 		   });
 		}
 	}
-});
-$.ajax({
+	$.ajax({
 		type:"get",
 		url:"zhuye.json",
 		data:"name=tom&age=22",
@@ -58,4 +57,5 @@ $.ajax({
 			zhuye=responseData.data.act_info;
 		/*	fun();*/
 		}
+});
 });
