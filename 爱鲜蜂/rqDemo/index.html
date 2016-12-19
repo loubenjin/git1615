@@ -24,6 +24,7 @@
 			})(document, window);
 		</script>
 		<!-- data-main 指定主程序入口 通常指定当前目录下的js文件 其他模块中的路径会参照主程序入口路径 -->		
+		<script type="text/javascript" src="http://res.wx.qq.com/open/js/jweixin-1.0.0.js"></script>
 		<link rel="stylesheet" type="text/css" href="modules/zhuye/css/main.css">
 		<link rel="stylesheet" type="text/css" href="modules/zhuye/css/swiper.min.css">
 		<script type="text/javascript" src="js/jquery-1.11.2.js"></script>
