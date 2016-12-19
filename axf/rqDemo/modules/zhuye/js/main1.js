@@ -28,15 +28,6 @@ define(["text!../zhuye.html","css!../css/main.css"], function(homePage){
 				$(".here").css({"display":"inline-block"});
 				$(".here").text(n++);
 			});*/
-			$.ajax({
-		type:"get",
-		url:"zhuye.json",
-		data:"name=tom&age=22",
-		success:function(responseData){
-			zhuye=responseData.data.act_info;
-		/*	fun();*/
-		}
-});
 			var htmlstr= baidu.template("firstTmp",{zhuye});
 			$('#swiper-wrapper').html(htmlstr);
 			$(this).find("#firstTmp").remove();
@@ -58,4 +49,13 @@ define(["text!../zhuye.html","css!../css/main.css"], function(homePage){
 		   });
 		}
 	}
+});
+$.ajax({
+		type:"get",
+		url:"zhuye.json",
+		data:"name=tom&age=22",
+		success:function(responseData){
+			zhuye=responseData.data.act_info;
+		/*	fun();*/
+		}
 });
