@@ -1,0 +1,124 @@
+.left{
+	position: fixed;
+	left: auto;
+	top: 0;
+	width: 0.76rem;
+	height: 100%;
+}
+.left-ul{
+	width: 100%;
+	height: 4.6rem;
+	margin-top: 0.55rem;
+	overflow-y: scroll;
+	background-color: #f8f8f8;
+	color: #6d6d6d;
+	text-align: center;
+	font-size: 0.12rem;
+}
+.left-ul>li{
+	width: 100%;
+	height: 0.49rem;
+	line-height: 0.49rem;
+	border-bottom: 1px solid #e0e0e0;
+}
+.left-ul>li:nth-of-type(2){
+	background: url(../img/hot.jpg) no-repeat top right;
+	background-size: .32rem;
+}
+.headbo{
+	width: 2.4rem;
+	height: 0.49rem;
+	border-bottom: 1px solid #e0e0e0;
+	position: fixed;
+	right: 0;
+	top: 0.55rem;
+	background: white;
+}
+.head-b{
+	display: flex;
+	align-items:center;
+	height: 100%;
+}
+.head-b>li{
+	text-align: center;
+	width: 50%;
+	line-height: 0.2rem;
+	margin: auto;
+	background:url(../img/xia.png) no-repeat 90% center;
+	background-size: 0.12rem;
+}
+.head-b>li:first-child{
+	border-right:1px solid #e0e0e0;
+}
+.main{
+	width: 2.4rem;
+	height: 4.62rem;
+	position: absolute;
+	right: 0;
+	top: .49rem;
+	z-index: -1;
+	overflow: hidden;
+	overflow: scroll;
+}
+.main-ul{
+	width: 100%;
+	height: 11.98rem;
+}
+.mian-li1{
+	height: 1.09rem;
+	padding: 0.06rem;
+	border-bottom: 1px solid #e0e0e0;
+	display:flex;
+	position: relative;
+}
+.list1{
+	height: 0.96rem;
+	width: 0.96rem;
+}
+.list12{
+	height: 0.96rem;
+	width: 1.32rem;
+	padding-left: 0.1rem;
+}
+.list12>p{
+	width: 90%;
+	line-height: .24rem;
+	height: .24rem;
+	font-size: 0.12rem;
+	overflow: hidden;
+	text-overflow: ellipsis;
+	white-space: nowrap;
+}
+.list12>p:nth-of-type(3){
+	color:#999;
+}
+.list12>p:nth-of-type(4){
+	color:red;
+}
+.send-b{
+	font-weight: 100;
+	text-decoration: line-through;
+	color:#999;
+}
+.list12>p:nth-of-type(2){
+	width: 0.35rem;
+	height: 0.22rem;
+	line-height: 0.2rem;
+	border:1px solid red;
+	border-radius: 0.05rem;
+	padding-left: 0.04rem;
+	margin-left: 0;
+	color:red;
+}
+.jia{
+	position: absolute;
+	right: 0.1rem;
+	bottom:0.1rem;
+	display: inline-block;
+	border:1px solid #e0e0e0;
+	width: 0.36rem;
+	height: 0.36rem;
+	border-radius: 50%;
+	background:red url(../img/shi.png) no-repeat right center;
+	background-size: 200% 100%;
+}

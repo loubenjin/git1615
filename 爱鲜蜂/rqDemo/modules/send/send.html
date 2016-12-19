@@ -1,0 +1,65 @@
+<div class="allcontainer">
+	<div class="header">
+		<div class="hleft"></div>
+		<div class="position">
+			<span class="pn">西三旗物美育知同创</span>
+		</div>
+		<div class="hright">
+			<span>搜&nbsp;索</span>
+		</div>			
+	</div>
+	<div class="headbo">
+		<ul class="head-b">
+			<li>全部分类</li>
+			<li>综合排序</li>
+		</ul>
+	</div>
+	<div class="left">
+		<ul class="left-ul">
+			<script id="fiveTmp" type = "text/html">
+				<%for(var j in send.categories){%>
+					<li id="<%=send.categories[j].id%>"><%=send.categories[j].name%></li>
+				<%}%>
+			</script>
+		</ul>
+	</div>
+	<div class="main">
+		<ul class="mian-ul">
+		<!-- -默认显示- -->
+			<script id="sixTmp" type = "text/html">
+				<%var t=104749;
+				for(var i in send.products[104749]){%>
+					<li class="mian-li1 <%=104749%>">
+						<div class="list2" style="width: 0.96rem;height: 0.96rem;background: url(<%=send.products[104749][i].app_mimg%>) no-repeat center center;background-size: 0.96rem"></div>
+						<div class="list12">
+							<p><%=send.products[104749][i].name%></p>
+							<p>精选</p>
+							<p><%=send.products[104749][i].specifics%></p>
+							<p>￥<%=send.products[104749][i].price%><b class="send-b">￥<%=send.products[104749][i].market_price%></b></p>
+						</div>
+						<span class="jia"></span>
+					</li>
+				<%}%>
+			</script>
+		</ul>
+		<ul class="mian-ul1">
+			<script id="sevTmp" type = "text/html">
+				<%
+				var t=e.target.id;
+				for(var i in send.products[t]){%>
+					<li class="mian-li1 <%=send.products[t][i].id%>">
+						<div class="list2" style="width: 0.96rem;height: 0.96rem;background: url(<%=send.products[t][i].app_mimg%>) no-repeat center center;background-size: 0.96rem"></div>
+						<div class="list12">
+							<p><%=send.products[t][i].name%></p>
+							<p>精选</p>
+							<p><%=send.products[t][i].specifics%></p>
+							<p>￥<%=send.products[t][i].price%><b class="send-b">￥<%=send.products[t][i].market_price%></b></p>
+						</div>
+						<span class="jia"></span>
+					</li>
+				<%}%>
+			</script>		
+		</ul>
+	</div>
+	<div class="useless"></div>
+</div>

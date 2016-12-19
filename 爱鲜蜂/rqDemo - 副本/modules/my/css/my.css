@@ -1,0 +1,250 @@
+body{
+	font: 0.14rem/1.5 "Myriad Set Pro","Lucida Grande","Helvetica Neue",Helvetica,Arial,Verdana,sans-serif,'Microsoft Yahei',Simsun;
+	color:#333;
+	box-sizing:border-box;
+}
+.my-contain{
+	width: 3.2rem;
+	position: relative;	
+}
+.my-header{
+	z-index: 9999;
+	width: 3.2rem;
+	margin: 0 auto;
+	height: 1.2rem;
+	display: flex;
+	align-items:center;
+	position: fixed;
+	left: auto;
+	top: 0;	
+	background: #ffd600;
+}
+.shop-tou{
+	width: 100%;
+	height: 60%;
+	text-indent: 1rem;
+	background: url(../img/mytou.png) no-repeat 0.2rem center,url(../img/tougt.png) no-repeat 90% center;
+	background-size: 0.7rem,0.14rem 0.22rem;
+	font-weight: 700;
+}
+.shop-tou>p{
+	height: 50%;
+	line-height: 0.36rem;
+	width: 100%;
+}
+.user-phone{
+	color: white;
+}
+.user-lever{
+	background: url(../img/lever.png) no-repeat 45% center;
+	background-size:0.98rem 0.34rem;
+	text-indent: 42%;
+	font-size: 0.13rem;
+	color: #e64f1a;
+}
+.two1{
+	width: 3.2rem;
+	height: .42rem;
+	display: flex;
+	align-items:center;
+	background:#f3c800;
+	position: fixed;
+	left: auto;
+	top: 1.2rem;
+	color: white;
+	font-size: 0.12rem;
+}
+.two1>div{
+	width: 50%;
+	height: 100%;
+}
+.two1>div:first-child{
+	height: 0.24rem;
+	text-indent: 0.7rem;	
+	background: url(../img/t1.png) no-repeat 0.36rem center;
+	background-size: 0.2rem;
+	border-right: 1px solid white;
+}
+.two1>div>span{
+	height: 0.24rem;
+	line-height: 0.24rem;
+}
+.two1>div:last-child{
+	height: 0.24rem;
+	text-indent: 0.7rem;	
+	background: url(../img/t2.png) no-repeat 0.36rem center;
+	background-size: 0.2rem;
+}
+.top{
+	width: 100%;
+	height: 1.62rem;
+}
+.heng{
+	width: 100%;
+	height: 0.12rem;
+	background-color: #EFEFEF;
+}
+.mylist{
+	width: 100%;
+	height: 1.34rem;
+}
+.mylist>div{
+	display: flex;
+	align-items:center;
+	width: 100%;
+	height: 0.56rem;
+	border-bottom: 1px solid #e0e0e0;
+	background: url(../img/gt.png) no-repeat right center;
+	background-size: 0.3rem 0.12rem;
+}
+.mylist>div>span>a{
+	color: #999;
+	font-size: 0.14rem;
+}
+.listone{
+	width: 100%;
+	height: 0.82rem;
+	display: flex;
+}
+.listone>li{
+	padding-top: 0.5rem;
+	font-size: 0.12rem;
+}
+.listone>li:nth-of-type(1){
+	background: url(../img/d4.png) no-repeat center 0.23rem;
+	background-size: 0.2rem;
+}
+.listone>li:nth-of-type(2){
+	background: url(../img/d2.png) no-repeat center 0.23rem;
+	background-size: 0.2rem;
+}
+.listone>li:nth-of-type(3){
+	background: url(../img/d1.png) no-repeat center 0.23rem;
+	background-size: 0.2rem;
+}
+.listone>li:nth-of-type(4){
+	background: url(../img/d3.png) no-repeat center 0.23rem;
+	background-size: 0.2rem;
+}
+.my-table{
+	width: 100%;
+	height: 2.42rem;
+	text-align: center;
+}
+.tr1>td>a{
+	display: inline-block;
+	width: 100%;
+	padding-top: 0.4rem;
+	font-size: .12rem;
+}
+.tr2>td>a{
+	display: inline-block;
+	width: 100%;
+	padding-top: 0.4rem;
+	font-size: .12rem;
+}
+.tr1>td{
+	width: 25%;
+	border-bottom: 1px solid #e0e0e0;
+}
+.tr1>td:nth-of-type(1){
+	background: url(../img/f3.png) no-repeat center 0.34rem;
+	background-size: 0.36rem;
+}
+.tr1>td:nth-of-type(2){
+	background: url(../img/f2.png) no-repeat center 0.34rem;
+	background-size: 0.36rem;
+}
+.tr1>td:nth-of-type(3){
+	background: url(../img/f4.png) no-repeat center 0.34rem;
+	background-size: 0.36rem;
+}
+.tr1>td:nth-of-type(4){
+	background: url(../img/f1.png) no-repeat center 0.34rem;
+	background-size: 0.36rem;
+}
+.tr2>td:nth-of-type(1){
+	background: url(../img/f5.png) no-repeat center 0.34rem;
+	background-size: 0.36rem;
+}
+.heng1{
+	width: 100%;
+	height: 0.4rem;
+	background: #EFEFEF;
+}
+.out{
+	text-align: center;
+	width: 100%;
+	height: 0.6rem;
+	line-height: 0.6rem;
+}
+.out>a{
+	font-size: .14rem;
+}
+/*.footer{
+	z-index: 9999;
+	position: fixed;
+	left: auto;
+	bottom: 0;
+	width: 3.2rem;
+	margin: 0 auto;
+	height: 0.6rem;
+	background-color: rgba(246,246,246,.95);
+}
+.ulid1{
+	display: flex;
+}
+.ulid1>li{
+	width: 25%;
+	height: 0.6rem;
+	text-align: center;
+	padding-top: 0.38rem;
+	font-size: 0.12rem;
+	
+}
+.ulid1>li>a{
+	color:#777;
+}
+.ulid1>li:first-child{
+	background: url(../img/b1.png) no-repeat center 0.07rem;
+	background-size: 0.24rem;
+}
+.ulid1>li:nth-of-type(2){
+	background: url(../img/b2.png) no-repeat center 0.07rem;
+	background-size: 0.24rem;
+}
+.ulid1>li:nth-of-type(3){
+	background: url(../img/b3.png) no-repeat center 0.07rem;
+	background-size: 0.24rem;
+}
+.ulid1>li:nth-of-type(4){
+	background: url(../img/b4-1.png) no-repeat center 0.07rem;
+	background-size: 0.24rem;
+}*/
+.left{
+	position: fixed;
+	left: auto;
+	top: 0;
+	width: 0.76rem;
+	height: 100%;
+}
+.left-ul{
+	width: 100%;
+	height: 7rem;
+	margin-top: 0.55rem;
+	overflow: scroll;
+	background-color: #f8f8f8;
+	color: #6d6d6d;
+	text-align: center;
+	font-size: 0.12rem;
+}
+.left-ul>li{
+	width: 100%;
+	height: 0.49rem;
+	line-height: 0.49rem;
+	border-bottom: 1px solid #e0e0e0;
+}
+.left-ul>li:nth-of-type(2){
+	background: url(../img/hot.jpg) no-repeat top right;
+	background-size: .32rem;
+}

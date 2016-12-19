@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<meta name = "viewport" content = "width=device-width,initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
+		<title>爱鲜蜂</title>
+		<script type="text/javascript">
+			(function (doc, win) {
+			var docEl = doc.documentElement,
+			resizeEvt = 'orientationchange' in window ? 'orientationchange' : 'resize',
+			recalc = function () {
+			var clientWidth = docEl.clientWidth;
+			if (!clientWidth) return;
+			if(clientWidth>=768){
+			docEl.style.fontSize = '240px';
+			}else{
+			docEl.style.fontSize = (clientWidth / 3.2) + 'px';
+			}
+			};
+			if (!doc.addEventListener) return;
+			win.addEventListener(resizeEvt, recalc, false);
+			doc.addEventListener('DOMContentLoaded', recalc, false);
+			})(document, window);
+		</script>
+		<link rel="stylesheet" type="text/css" href="css/shop.css">
+	</head>
+	<body>
+		<div class="contain">
+			<div class="header">
+				<div class="tou">
+					<h4>购物车</h4>
+				</div>
+			</div>
+			<div class="top1"></div>
+			<div class="shop1">
+				<div class="people">
+					<table>
+						<tr>
+							<td>收&nbsp;&nbsp;货&nbsp;&nbsp;人</td>
+							<td>大张三&nbsp;先生</td>
+							<td rowspan="3" class="spa">修改</td>
+						</tr>
+						<tr>
+							<td>电&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;话</td>
+							<td>18911111111</td>
+						</tr>
+						<tr>
+							<td>收货地址</td>
+							<td>北京市海淀区西三旗物美超市大米厂</td>
+						</tr>
+					</table>
+				</div>
+			</div>
+			<div class="heng"></div>
+			<div class="shansong">
+				<div class="shan1">
+					<span class="sone">闪送超市</span>
+					<span class="stwo">凑单专区</span>
+				</div>		
+				<p>￥0起送，22:00前满￥30免运费，22:00后满￥69免运费</p>
+				<p class="shan2"> <span>收货时间&nbsp;&nbsp;<b>一小时达</b></span><span>可预订</span></p>
+				<div class="shan3">
+					<span>收货备注</span><input type="text"placeholder="可输入100字以内特殊要求内容">
+				</div>
+			</div>
+			<table class="tab1">
+				<tr class="tr_tab">
+					<td></td>
+					<td></td>
+					<td class="ch">
+						<div>蜂觅·越南直采红心火龙果</div>
+						<div>￥19</div>
+						<div>
+							<span class="jian1"></span><span>1</span><span class="jia1"></span>
+						</div>
+					</td>
+				</tr>
+				<tr class="tr_tab">
+					<td></td>
+					<td></td>
+					<td class="ch">
+						<div>蜂觅·越南直采红心火龙果</div>
+						<div>￥19</div>
+						<div>
+							<span class="jian1"></span><span>1</span><span class="jia1"></span>
+						</div>
+					</td>
+				</tr>
+				<tr class="tr_tab">
+					<td></td>
+					<td></td>
+					<td class="ch">
+						<div>蜂觅·越南直采红心火龙果</div>
+						<div>￥19</div>
+						<div>
+							<span class="jian1"></span><span>1</span><span class="jia1"></span>
+						</div>
+					</td>
+				</tr>
+			</table>
+			<div>
+				
+			</div>
+			<div class="footer">
+				<ul class="ulid1">
+					<li><a href="../zhuye/zhuye.html"><div></div><span>首页</span></a></li>
+					<li><a href="../send/send.html"><div></div><span>闪送超市</span></a></li>
+					<li><a href="../shop/shop.html"><div></div><span>购物车</span></a></li>
+					<li><a href="../my/my.html"><div></div><span>我的</span></a></li>
+				</ul>
+			</div>
+			<div class="useless"></div>
+		</div>
+	</body>
+</html>
