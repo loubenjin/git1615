@@ -71,7 +71,6 @@ $signPackage = $jssdk->GetSignPackage();
 		</div>
 	</body>
 	<script>
-
   wx.config({
     debug: true,
     appId: '<?php echo $signPackage["appId"];?>',
@@ -128,7 +127,7 @@ $signPackage = $jssdk->GetSignPackage();
         alert('用户拒绝授权获取地理位置');
     }
 });
-  });
+});
 </script>
 <script data-main = "app" type="text/javascript" src = "js/require.js"></script>
 </html>
