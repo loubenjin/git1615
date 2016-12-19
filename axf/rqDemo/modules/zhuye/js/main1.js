@@ -55,7 +55,7 @@ $.ajax({
 		url:"zhuye.json",
 		data:"name=tom&age=22",
 		success:function(responseData){
-			zhuye=responseData.data.act_info;
+		var	zhuye=responseData.data.act_info;
 		/*	fun();*/
 		}
 });
