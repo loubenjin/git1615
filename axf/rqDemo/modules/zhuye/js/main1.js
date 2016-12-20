@@ -28,34 +28,37 @@ define(["text!../zhuye.html","css!../css/main.css"], function(homePage){
 				$(".here").css({"display":"inline-block"});
 				$(".here").text(n++);
 			});*/
-					$.ajax({
-				type:"get",
-				url:"zhuye.json",
-				data:"name=tom&age=22",
-				success:function(responseData){
-				zhuye=responseData.data.act_info;
-				var htmlstr= baidu.template("firstTmp",{zhuye});
-				$('#swiper-wrapper').html(htmlstr);
-				$(this).find("#firstTmp").remove();
-				var htmlstr1= baidu.template("secondTmp",{zhuye});
-				$('.four-ul').html(htmlstr1);
-				$(this).find("#secondTmp").remove();
-				var htmlstr2= baidu.template("thrTmp",{zhuye});
-				$('.three').html(htmlstr2);
-				$(this).find("#thrTmp").remove();
-				var htmlstr3= baidu.template("fourTmp",{zhuye});
-				$('.bigul').html(htmlstr3);
-				$(this).find("#fourTmp").remove();			
-				var mySwiper = new Swiper('.swiper-container', {
-					autoplay: 2000,//可选选项，自动滑动(时间:毫秒)
-					autoplayDisableOnInteraction : false,
-					loop : true,//循环
-					pagination : '.swiper-pagination',//分页器
-					updateOnImagesReady : true,
-			   });
-				/*	fun();*/
+				function funv(){
+					var htmlstr= baidu.template("firstTmp",{zhuye});
+					$('#swiper-wrapper').html(htmlstr);
+					$(this).find("#firstTmp").remove();
+					var htmlstr1= baidu.template("secondTmp",{zhuye});
+					$('.four-ul').html(htmlstr1);
+					$(this).find("#secondTmp").remove();
+					var htmlstr2= baidu.template("thrTmp",{zhuye});
+					$('.three').html(htmlstr2);
+					$(this).find("#thrTmp").remove();
+					var htmlstr3= baidu.template("fourTmp",{zhuye});
+					$('.bigul').html(htmlstr3);
+					$(this).find("#fourTmp").remove();
 				}
-			});
+						
+			var mySwiper = new Swiper('.swiper-container', {
+				autoplay: 2000,//可选选项，自动滑动(时间:毫秒)
+				autoplayDisableOnInteraction : false,
+				loop : true,//循环
+				pagination : '.swiper-pagination',//分页器
+				updateOnImagesReady : true,
+		   });
 		}
 	}
+});
+$.ajax({
+		type:"get",
+		url:"zhuye.json",
+		data:"name=tom&age=22",
+		success:function(responseData){
+		var	zhuye=responseData.data.act_info;
+		fun();
+		}
 });
