@@ -7,15 +7,6 @@
 define(["text!../zhuye.html","css!../css/main.css"], function(homePage){
 	return {
 		init : function(){
-					$.ajax({
-				type:"get",
-				url:"zhuye.json",
-				data:"name=tom&age=22",
-				success:function(responseData){
-				var	zhuye=responseData.data.act_info;
-				func();
-				}
-			});
 			$(".main-zhu").html(homePage);
 			/*初始化定位功能界面*/
 			var start=setTimeout(function(){
@@ -36,19 +27,8 @@ define(["text!../zhuye.html","css!../css/main.css"], function(homePage){
 				$(".span1").css({"left":e.offsetLeft,"top":e.clientY,"background": di,"background-size": "1rem"});
 				$(".here").css({"display":"inline-block"});
 				$(".here").text(n++);
-			});*/		
-			var mySwiper = new Swiper('.swiper-container', {
-				autoplay: 2000,//可选选项，自动滑动(时间:毫秒)
-				autoplayDisableOnInteraction : false,
-				loop : true,//循环
-				pagination : '.swiper-pagination',//分页器
-				updateOnImagesReady : true,
-		   });
-		}
-	}
-});
-function func(){
-	var htmlstr= baidu.template("firstTmp",{zhuye});
+			});*/
+			var htmlstr= baidu.template("firstTmp",{zhuye});
 			$('#swiper-wrapper').html(htmlstr);
 			$(this).find("#firstTmp").remove();
 			var htmlstr1= baidu.template("secondTmp",{zhuye});
@@ -59,5 +39,23 @@ function func(){
 			$(this).find("#thrTmp").remove();
 			var htmlstr3= baidu.template("fourTmp",{zhuye});
 			$('.bigul').html(htmlstr3);
-			$(this).find("#fourTmp").remove();	
-}
+			$(this).find("#fourTmp").remove();			
+			var mySwiper = new Swiper('.swiper-container', {
+				autoplay: 2000,//可选选项，自动滑动(时间:毫秒)
+				autoplayDisableOnInteraction : false,
+				loop : true,//循环
+				pagination : '.swiper-pagination',//分页器
+				updateOnImagesReady : true,
+		   });
+		}
+	}
+});
+$.ajax({
+		type:"get",
+		url:"zhuye.json",
+		data:"name=tom&age=22",
+		success:function(responseData){
+		var	zhuye=responseData.data.act_info;
+		/*	fun();*/
+		}
+});
