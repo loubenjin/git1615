@@ -53,7 +53,6 @@ define(["text!../zhuye.html","css!../css/main.css"], function(homePage){
 $.ajax({
 		type:"get",
 		url:"zhuye.json",
-		asyn:true,
 		data:"name=tom&age=22",
 		success:function(responseData){
 		zhuye=responseData.data.act_info;
