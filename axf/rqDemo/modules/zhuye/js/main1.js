@@ -33,7 +33,7 @@ define(["text!../zhuye.html","css!../css/main.css"], function(homePage){
 				url:"zhuye.json",
 				data:"name=tom&age=22",
 				success:function(responseData){
-				var	zhuye=responseData.data.act_info;
+				zhuye=responseData.data.act_info;
 				var htmlstr= baidu.template("firstTmp",{zhuye});
 				$('#swiper-wrapper').html(htmlstr);
 				$(this).find("#firstTmp").remove();
